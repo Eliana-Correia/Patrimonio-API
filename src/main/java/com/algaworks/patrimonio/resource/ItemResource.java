@@ -24,7 +24,7 @@ import com.algaworks.patrimonio.repository.itemRepository;
 public class ItemResource {
 	
 	//vamos devolver a informação que foi pedida e criar a informação que for passada na requisição para inserção de informação
-	//dirá para fazer a injeção
+	//dirá para fazer a injeção de uma instancia dessa classe
 	@Autowired
 	private itemRepository ItemRepository;
 	
@@ -37,7 +37,7 @@ public class ItemResource {
 		return ItemRepository.findAll();
 	}
 	
-	//@requestBody o que estiver no corpo da requisição, ele vai pegar e criar uma instencia de Item, preencher e passar para o metodo adicionar
+	//@requestBody o que estiver no corpo da requisição, ele vai pegar e criar uma instancia de Item, preencher e passar para o metodo adicionar
 	//@valid, para que o metodo seja validado
 	//o mapeamento dessa operação será o PostMapping
 	//não houve conflito entre o Get e o Post usando o itens, pq são mapeamentos diferentes

@@ -11,7 +11,6 @@ import javax.persistence.Id;
 import org.hibernate.validator.constraints.NotEmpty;
 
 @Entity
-
 public class item {
 //a primeira propriedade
 	//pq os chamados são terminam em ;?
@@ -19,7 +18,6 @@ public class item {
 	@Id
 	//o Generate servirá para validar
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	
 	private Long id;
 	
 	//segunda propriedade
